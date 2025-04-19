@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Clean My Tab Title - Options</title>
+<link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <h1>Clean My Tab Title - Options</h1>
+  <p>Enter custom patterns (regex or plain text) to remove from tab titles, one per line:</p>
+  <textarea id="rulesTextarea" rows="10" placeholder="e.g. \| Site Name\n- Company"></textarea>
+  <div class="buttons">
+    <button id="saveBtn">Save</button>
+    <button id="resetBtn">Reset to Default</button>
+  </div>
+  <h2>Preview</h2>
+  <input type="text" id="sampleTitle" placeholder="Enter sample title to preview" />
+  <p>Cleaned title:</p>
+  <div id="previewOutput" class="preview"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>

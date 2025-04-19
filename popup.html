@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clean Tab</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <span class="app-title">CleanTab</span>
+      <div class="header-controls">
+        <button id="themeToggle" title="Toggle Theme">🌞</button>
+        <button id="settingsBtn" title="Settings">⚙️</button>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <input type="text" id="tabTitle" placeholder="Enter custom title" />
+      <div class="actions">
+        <button id="saveBtn">Save</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </div>
+
+    <!-- Toggle + Mode -->
+    <div class="mode-row">
+      <label class="switch">
+        <input type="checkbox" id="toggleBtn" />
+        <span class="slider"></span>
+      </label>
+      <div class="mode-info">
+        <span class="mode-label">Current mode:</span>
+        <span id="modeDisplay" class="mode-value">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">© 2025</footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
